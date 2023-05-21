@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+      /* Language and Environment */
+      "target": "es2018" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+  
+      /* Modules */
+      "module": "commonjs" /* Specify what module code is generated. */,
+  
+      // "outFile": "./",                                  /* Specify a file that bundles all outputs into one JavaScript file. If 'declaration' is true, also designates a file that bundles all .d.ts output. */
+      "outDir": "./dist" /* Specify an output folder for all emitted files. */,
+  
+      /* Interop Constraints */
+      "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+      "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+  
+      /* Type Checking */
+      "strict": true /* Enable all strict type-checking options. */,
+  
+      /* Completeness */
+      "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+  
+      "types": ["reflect-metadata", "node"],
+      "removeComments": true,
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "strictNullChecks": true,
+      "strictFunctionTypes": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noFallthroughCasesInSwitch": true,
+      "allowSyntheticDefaultImports": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "strictPropertyInitialization": false
+    },
+    "exclude": ["node_modules"]
+  }
+  
