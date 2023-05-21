@@ -6,6 +6,7 @@ dotenv.config();
 
 import { DBURL, LOG_COLOR_FG_BLUE, PORT } from './config/consts';
 import connect from './config/database';
+import { mainController } from './controllers';
 import { errorHandler } from './helpers/error-helper';
 import { passportHandler } from './helpers/passport';
 
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname + '/public'));
 app.use(passportHandler.initialize());
+app.use('/', mainController);
 app.use('/', errorHandler);
 
 app.listen(port, () => {

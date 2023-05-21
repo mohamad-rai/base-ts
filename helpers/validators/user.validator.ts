@@ -1,6 +1,6 @@
 import Joi from 'joi';
 
-import { USER_GENDER, USER_ROLE } from '../../interfaces';
+import { USER_GENDER } from '../../interfaces';
 import {
   firstLetterUpperCaseInJoi,
   validateObjectIDByJoi,
@@ -10,7 +10,6 @@ import {
 const commonUserFields = {
   picture: Joi.string(),
   mobile: Joi.string().min(11).max(11),
-  role: Joi.string().valid(...Object.keys(USER_ROLE)),
 };
 
 export const createUserValidator = Joi.object({
